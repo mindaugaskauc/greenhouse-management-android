@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_f_temp">
+    <fragment
+        android:id="@+id/nav_f_temp"
+        android:name="com.example.crop_management_system.nav_f_temp"
+        android:label="@string/menu_f_temp"
+        tools:layout="@layout/fragment_nav_f_temp" />
+    <fragment
+        android:id="@+id/nav_s_temp"
+        android:name="com.example.crop_management_system.nav_s_temp"
+        android:label="@string/menu_s_temp"
+        tools:layout="@layout/fragment_nav_s_temp" />
+    <fragment
+        android:id="@+id/nav_hum"
+        android:name="com.example.crop_management_system.nav_hum"
+        android:label="@string/menu_hum"
+        tools:layout="@layout/fragment_nav_hum" />
+    <fragment
+        android:id="@+id/nav_s_ph"
+        android:name="com.example.crop_management_system.nav_s_ph"
+        android:label="@string/menu_s_ph"
+        tools:layout="@layout/fragment_nav_s_ph" />
+    <fragment
+        android:id="@+id/nav_water"
+        android:name="com.example.crop_management_system.nav_water"
+        android:label="@string/menu_water"
+        tools:layout="@layout/fragment_nav_water" />
+    <fragment
+        android:id="@+id/nav_window"
+        android:name="com.example.crop_management_system.nav_window"
+        android:label="@string/menu_window"
+        tools:layout="@layout/fragment_nav_window" />
+   <!-- <fragment
+        android:id="@+id/nav_task"
+        android:name="com.example.crop_management_system.nav_task"
+        android:label="@string/menu_task"
+        tools:layout="@layout/fragment_nav_task" /> -->
+    <fragment
+        android:id="@+id/nav_stat"
+        android:name="com.example.crop_management_system.nav_stat"
+        android:label="@string/menu_stat"
+        tools:layout="@layout/fragment_nav_stat" />
+</navigation>

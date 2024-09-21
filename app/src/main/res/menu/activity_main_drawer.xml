@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_f_temp"
+            android:icon="@drawable/field_temperature"
+            android:title="@string/menu_f_temp" />
+        <item
+            android:id="@+id/nav_s_temp"
+            android:icon="@drawable/soil_temperature"
+            android:title="@string/menu_s_temp" />
+        <item
+            android:id="@+id/nav_hum"
+            android:icon="@drawable/humidity"
+            android:title="@string/menu_hum" />
+        <item
+            android:id="@+id/nav_s_ph"
+            android:icon="@drawable/soil_ph"
+            android:title="@string/menu_s_ph" />
+        <item
+            android:id="@+id/nav_water"
+            android:icon="@drawable/watering"
+            android:title="@string/menu_water" />
+        <item
+            android:id="@+id/nav_window"
+            android:icon="@drawable/window"
+            android:title="@string/menu_window" />
+      <!--  <item
+            android:id="@+id/nav_task"
+            android:icon="@drawable/task"
+            android:title="@string/menu_task" /> -->
+        <item
+            android:id="@+id/nav_stat"
+            android:icon="@drawable/statistics"
+            android:title="@string/menu_stat" />
+
+    </group>
+</menu>

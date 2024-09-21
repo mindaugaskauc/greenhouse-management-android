@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".modes">
+
+
+    <EditText
+        android:id="@+id/hum_heatLimitNumberDecimalM"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:ems="10"
+        android:fontFamily="times-new roman"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hum_coldLimitM"
+        app:layout_constraintTop_toBottomOf="@+id/f_temp_coldLimitNumberDecimalM"
+        app:layout_constraintVertical_bias="0.933" />
+
+    <EditText
+        android:id="@+id/hum_coldLimitNumberDecimalM"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:ems="15"
+        android:fontFamily="times-new roman"
+        android:includeFontPadding="true"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hum_heatLimitM"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.929" />
+
+    <TextView
+        android:id="@+id/hum_heatLimitM"
+        android:layout_width="100dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="112dp"
+        android:fontFamily="times-new roman"
+        android:text="@string/max_dregM"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f_temp_coldLimitM" />
+
+    <TextView
+        android:id="@+id/hum_coldLimitM"
+        android:layout_width="100dp"
+        android:layout_height="19dp"
+        android:fontFamily="times-new roman"
+        android:text="@string/min_dregM"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.908" />
+
+    <Button
+        android:id="@+id/Kviečiai"
+        android:layout_width="123dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="160dp"
+        android:text="Kviečiai"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Rugiai"
+        android:layout_width="123dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:text="Rugiai"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Kviečiai" />
+
+    <Button
+        android:id="@+id/Mieziai"
+        android:layout_width="123dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:text="Miežiai"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Rugiai" />
+
+    <Button
+        android:id="@+id/Kukuruzai"
+        android:layout_width="123dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:text="Kukurūzai"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Mieziai" />
+
+    <EditText
+        android:id="@+id/f_temp_heatLimitNumberDecimalM"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:ems="10"
+        android:fontFamily="times-new roman"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/f_temp_heatLimitM"
+        app:layout_constraintTop_toBottomOf="@+id/f_temp_coldLimitNumberDecimalM"
+        app:layout_constraintVertical_bias="0.114" />
+
+    <TextView
+        android:id="@+id/f_temp_heatLimitM"
+        android:layout_width="100dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="times-new roman"
+        android:text="@string/max_tempM"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.110"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f_temp_coldLimitM" />
+
+    <TextView
+        android:id="@+id/f_temp_coldLimitM"
+        android:layout_width="100dp"
+        android:layout_height="19dp"
+        android:fontFamily="times-new roman"
+        android:text="@string/min_tempM"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.78" />
+
+    <EditText
+        android:id="@+id/f_temp_coldLimitNumberDecimalM"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:ems="15"
+        android:fontFamily="times-new roman"
+        android:includeFontPadding="true"
+        android:inputType="numberDecimal"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/f_temp_coldLimitM"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.787" />
+</androidx.constraintlayout.widget.ConstraintLayout>

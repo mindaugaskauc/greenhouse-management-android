@@ -1,0 +1,4 @@
+include ':MPChartExample'
+include ':MPChartLib'
+include ':app'
+rootProject.name = "Crop_Management_System"
